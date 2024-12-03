@@ -1,0 +1,121 @@
+/* Reset Styles */
+body, ul, li, a, button {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Navbar Styling */
+  .navbar {
+    background: #1a202c;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem 2rem;
+  }
+  
+  /* Logo */
+  .logo a {
+    font-size: 1.5rem;
+    font-weight: bold;
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .logo a:hover {
+    color: #38b2ac;
+  }
+  
+  /* Menu */
+  .menu {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    transition: max-height 0.5s ease-in-out;
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+    transition: color 0.3s;
+  }
+  
+  .menu li a:hover {
+    color: #38b2ac;
+  }
+  
+  /* Mobile Menu */
+  .mobile-menu {
+    flex-direction: column;
+    max-height: 0;
+    overflow: hidden;
+    background: #2d3748;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+  }
+  
+  .mobile-menu.open {
+    max-height: 300px; /* Adjust height as needed */
+  }
+  
+  .desktop-menu {
+    display: flex;
+  }
+  
+  .desktop-menu.open {
+    display: flex;
+  }
+  
+  .menu-button {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 24px;
+    cursor: pointer;
+  }
+  
+  .menu-button .bar {
+    background: white;
+    height: 3px;
+    border-radius: 3px;
+    transition: transform 0.3s ease, background 0.3s ease;
+  }
+  
+  .menu-button.open .bar:nth-child(1) {
+    transform: rotate(45deg) translateY(10px);
+  }
+  
+  .menu-button.open .bar:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .menu-button.open .bar:nth-child(3) {
+    transform: rotate(-45deg) translateY(-10px);
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .desktop-menu {
+      display: none;
+    }
+  
+    .menu-button {
+      display: flex;
+    }
+  }
+  

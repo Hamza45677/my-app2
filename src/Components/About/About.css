@@ -1,0 +1,141 @@
+/* Reset Styles */
+body, h2, p, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background: #f4f4f4;
+  }
+  
+  /* About Section */
+  .about {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5rem 1rem;
+    background: linear-gradient(135deg, #2c5282, #2d3748);
+    color: white;
+  }
+  
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  /* About Image */
+  .about-image {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .profile-img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .profile-img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* About Content */
+  .about-content {
+    flex: 1;
+    max-width: 600px;
+  }
+  
+  .about-content h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
+  
+  .about-content p {
+    font-size: 1.1rem;
+    margin-bottom: 1rem;
+    line-height: 1.6;
+  }
+  
+  .highlight {
+    color: #63b3ed;
+    font-weight: bold;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 0.8rem 1.5rem;
+    background: #63b3ed;
+    color: white;
+    font-size: 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background 0.3s, transform 0.3s;
+  }
+  
+  .btn:hover {
+    background: #4299e1;
+    transform: scale(1.05);
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideIn {
+    0% {
+      opacity: 0;
+      transform: translateX(-50px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  .slide-in {
+    animation: slideIn 1s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .container {
+      flex-direction: column;
+      text-align: center;
+    }
+  
+    .about-image {
+      margin-bottom: 2rem;
+    }
+  
+    .profile-img {
+      width: 250px;
+      height: 250px;
+    }
+  
+    .about-content h2 {
+      font-size: 2rem;
+    }
+  }
+  

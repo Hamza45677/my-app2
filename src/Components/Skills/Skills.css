@@ -1,0 +1,104 @@
+/* Reset Styles */
+body, h2, p, label {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  /* Skills Section */
+  .skills {
+    padding: 5rem 2rem;
+    background: #f4f4f4;
+    text-align: center;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /* Skills Title */
+  .skills-title h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .skills-description {
+    font-size: 1.2rem;
+    color: #555;
+    margin-bottom: 3rem;
+  }
+  
+  /* Skills Progress Bars */
+  .skills-progress {
+    margin-bottom: 3rem;
+    text-align: left;
+  }
+  
+  .skill {
+    margin-bottom: 2rem;
+  }
+  
+  .skill label {
+    display: block;
+    font-size: 1.1rem;
+    color: #333;
+    margin-bottom: 0.5rem;
+  }
+  
+  .progress-bar {
+    background: #ddd;
+    border-radius: 10px;
+    height: 20px;
+    width: 100%;
+    margin-bottom: 1rem;
+  }
+  
+  .progress {
+    background: #38b2ac;
+    height: 100%;
+    border-radius: 10px;
+    transition: width 1s ease-in-out;
+  }
+  
+  .donut-chart {
+    margin-top: 3rem;
+  }
+  
+  .donut-chart h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    0% {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .fade-in {
+    animation: fadeIn 1.2s ease-in-out;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skills-title h2 {
+      font-size: 2rem;
+    }
+  
+    .skills-description {
+      font-size: 1rem;
+    }
+  }
+  
