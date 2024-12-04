@@ -21,7 +21,7 @@ const Home = () => {
         {/* Hero Image */}
         <div className="image-content slide-in">
           <img
-            src="https://via.placeholder.com/400"
+            src="/public/pic2.jpg"
             alt="Profile"
             className="profile-img"
           />

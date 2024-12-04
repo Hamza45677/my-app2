@@ -1,65 +1,46 @@
-import React from "react";
-import "./Project.css"; 
-const projects = [
-  {
-    title: "Project 1",
-    description: "This is a brief description of project 1.",
-    imageUrl: "https://via.placeholder.com/400x250",
-    link: "#",
-  },
-  {
-    title: "Project 2",
-    description: "This is a brief description of project 2.",
-    imageUrl: "https://via.placeholder.com/400x250",
-    link: "#",
-  },
-  {
-    title: "Project 3",
-    description: "This is a brief description of project 3.",
-    imageUrl: "https://via.placeholder.com/400x250",
-    link: "#",
-  },
-  {
-    title: "Project 4",
-    description: "This is a brief description of project 4.",
-    imageUrl: "https://via.placeholder.com/400x250",
-    link: "#",
-  },
-];
+import React from 'react';
+import './Project.css'; // Assuming you are styling with an external CSS file
 
 const Projects = () => {
-  return (
-    <section className="projects" id="projects">
-      <div className="container">
-        {/* Title */}
-        <div className="projects-title fade-in">
-          <h2>My Projects</h2>
-          <p className="projects-description">
-            Check out some of the amazing projects I have worked on.
-          </p>
-        </div>
+  const projects = [
+    {
+      title: 'Basic Assignment',
+      description: 'A responsive portfolio website built using React and Tailwind CSS.',
+      link: 'https://my-app-five-orpin.vercel.app/',
+      image: '/public/pic3.jpg',
+    },
+    {
+      title: 'White Space',
+      description: 'An online store with features like product listing, shopping cart, and checkout.',
+      link: 'https://my-app-3-4nog.vercel.app/',
+      image: '/public/pic4.jpg',
+    },
+    {
+      title: 'Weather App',
+      description: 'A weather app that provides real-time weather information using APIs.',
+      link: 'https://yourweatherapp.com',
+      image: '',
+    },
+  ];
 
-        {/* Projects Grid */}
-        <div className="projects-grid">
-          {projects.map((project, index) => (
-            <div key={index} className="project-card fade-in">
-              <img
-                src={project.imageUrl}
-                alt={project.title}
-                className="project-image"
-              />
-              <div className="project-info">
-                <h3>{project.title}</h3>
-                <p>{project.description}</p>
-                <a href={project.link} className="project-link">
-                  View Project
-                </a>
-              </div>
+  return (
+    <div className="projects-container">
+      <h2 className="section-title">My Projects</h2>
+      <div className="projects-grid">
+        {projects.map((project, index) => (
+          <div className="project-card" key={index}>
+            <img src={project.image} alt={project.title} className="project-image" />
+            <div className="project-details">
+              <h3 className="project-title">{project.title}</h3>
+              <p className="project-description">{project.description}</p>
+              <a href={project.link} target="_blank" rel="noopener noreferrer" className="project-link">
+                View Project
+              </a>
             </div>
-          ))}
-        </div>
+          </div>
+        ))}
       </div>
-    </section>
+    </div>
   );
 };
 

@@ -1,4 +1,6 @@
+
 import React, { useState } from "react";
+import { FaLinkedin, FaGithub, FaTwitter, FaInstagram } from "react-icons/fa"; // Social Media Icons
 import "./Contact.css"; // Import CSS file
 
 const Contact = () => {
@@ -30,7 +32,7 @@ const Contact = () => {
         <div className="contact-title fade-in">
           <h2>Contact Me</h2>
           <p className="contact-description">
-            Feel free to reach out for any inquiries or collaborations!
+            Feel free to reach out for any inquiries or collaborations! You can also find me on social media.
           </p>
         </div>
 
@@ -75,6 +77,34 @@ const Contact = () => {
             Send Message
           </button>
         </form>
+
+        {/* Social Media Links */}
+        <div className="social-media-links fade-in">
+          <h3>Find me on:</h3>
+          <div className="social-icons">
+            <a
+              href="https://www.linkedin.com/in/hamza-ali-3a88b32a5?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaLinkedin />
+            </a>
+            <a
+              href="https://github.com/Hamza45677"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaGithub />
+            </a>
+            <a
+              href="https://www.instagram.com/offx._.hamii/profilecard/?igsh=MWpteTluZ3V1bno0MA=="
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <FaInstagram />
+            </a>
+          </div>
+        </div>
       </div>
     </section>
   );
