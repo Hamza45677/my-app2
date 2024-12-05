@@ -8,7 +8,7 @@ const About = () => {
         {/* About Image */}
         <div className="about-image slide-in">
           <img
-            src="/public/pic1.jpg"
+            src="/images/pic1.jpg"
             alt="About Me"
             className="profile-img"
           />

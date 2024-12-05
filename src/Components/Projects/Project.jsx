@@ -7,13 +7,13 @@ const Projects = () => {
       title: 'Basic Assignment',
       description: 'A responsive portfolio website built using React and Tailwind CSS.',
       link: 'https://my-app-five-orpin.vercel.app/',
-      image: '/public/pic3.jpg',
+      image: "/images/pic3.jpg"
     },
     {
       title: 'White Space',
       description: 'An online store with features like product listing, shopping cart, and checkout.',
       link: 'https://my-app-3-4nog.vercel.app/',
-      image: '/public/pic4.jpg',
+      image: "/images/pi4.jpg"
     },
     {
       title: 'Weather App',

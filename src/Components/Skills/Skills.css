@@ -37,3 +37,26 @@
     opacity: 1;
   }
 }
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skills {
+    padding: 2rem 1rem;
+  }
+
+  .skills-title h2 {
+    font-size: 2rem;
+  }
+
+  .skills-description {
+    font-size: 1rem;
+  }
+
+  .donut-chart {
+    margin-top: 2rem;
+  }
+
+  .donut-chart h3 {
+    font-size: 1.5rem;
+  }
+};

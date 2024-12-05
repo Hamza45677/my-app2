@@ -20,8 +20,8 @@ const Home = () => {
 
         {/* Hero Image */}
         <div className="image-content slide-in">
-          <img
-            src="/public/pic2.jpg"
+        <img
+            src="/images/pic2.jpg"
             alt="Profile"
             className="profile-img"
           />
